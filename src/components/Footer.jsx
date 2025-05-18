@@ -4,12 +4,12 @@ const Footer = () => {
   return (
     <div>
           <footer className=" fixed bottom-0 footer footer-horizontal footer-center bg-base-400 text-base-content rounded p-5">
-  <nav className="grid grid-flow-col gap-6">
+  {/* <nav className="grid grid-flow-col gap-6">
     <a className="link link-hover">About us</a>
     <a className="link link-hover">Contact</a>
     <a className="link link-hover">Jobs</a>
     <a className="link link-hover">Press kit</a>
-  </nav>
+  </nav> */}
   <nav>
     <div className="grid grid-flow-col gap-4">
       <a>
@@ -48,7 +48,7 @@ const Footer = () => {
     </div>
   </nav>
   <aside>
-    <p>Copyright © {new Date().getFullYear()} - All right reserved by ACME Industries Ltd</p>
+    <p>Copyright © {new Date().getFullYear()} - All right reserved by Deepak Kumar Pvt Ltd.</p>
   </aside>
            </footer>
     </div>
