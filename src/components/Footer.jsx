@@ -10,7 +10,7 @@ const Footer = () => {
     <a className="link link-hover">Jobs</a>
     <a className="link link-hover">Press kit</a>
   </nav> */}
-  <nav>
+  {/* <nav>
     <div className="grid grid-flow-col gap-4">
       <a>
         <svg
@@ -46,7 +46,7 @@ const Footer = () => {
         </svg>
       </a>
     </div>
-  </nav>
+  </nav> */}
   <aside>
     <p>Copyright © {new Date().getFullYear()} - All right reserved by Deepak Kumar Pvt Ltd.</p>
   </aside>
