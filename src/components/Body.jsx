@@ -26,8 +26,8 @@ const Body = () =>{
         if(err.status===401){
             navigate("/login");
         }
-        // navigate("/login")
-        console.log(err);
+        navigate("/login");
+        // console.log(err);
     }
    }
    useEffect(()=>{

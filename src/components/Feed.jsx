@@ -17,7 +17,7 @@ const Feed = () => {
       const res = await axios.get(BASE_URL + "/feed", {
         withCredentials: true,
       });
-      // console.log(res.data);
+      // console.log(res.data.data) se nahi cahl raha h;
       dispatch(addFeed(res?.data));
     } catch (err) {
       console.log("Feed Error " + err);
