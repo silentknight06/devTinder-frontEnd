@@ -8,7 +8,6 @@ import { BASE_URL } from "../utils/constants";
 import axios from "axios";
 import { addUser } from "../utils/userSlice";
 
-
 const Body = () =>{
 
    const dispatch = useDispatch();
@@ -31,13 +30,11 @@ const Body = () =>{
         console.log(err);
     }
    }
-
    useEffect(()=>{
     // if(!userData){
     fetchUser();
     // }
    }, []);
-
     return (
         <div>
               <NavBar/>
