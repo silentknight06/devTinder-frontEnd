@@ -13,13 +13,14 @@ const Body = () =>{
    const dispatch = useDispatch();
    const navigate = useNavigate();
    const userData = useSelector((store)=>store.user);
-   // fetchuser function is used for saving the Login data :
+   // fetch user function is used for saving the Login data :
    const fetchUser = async()=>{
     if(userData)return ;
     try{
           const res = await axios.get(BASE_URL + "/profile/view", {
             withCredentials: true,
           });
+        //   console.log(res);
           dispatch(addUser(res.data));
     }
     catch(err){
