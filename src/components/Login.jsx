@@ -7,8 +7,8 @@ import { BASE_URL } from "../utils/constants";
 const Login = () => {
   const [firstName, setFirstName] = useState("");
   const [lastName, setLastName] = useState("");
-  const [emailId, setEmailId] = useState("sachin@gmail.com");
-  const [password, setPassword] = useState("Sachin@123");
+  const [emailId, setEmailId] = useState("");
+  const [password, setPassword] = useState("");
   const [isLogInForm, setIsLogInForm] = useState(true);
   const [err, setErr] = useState("");
   const dispatch = useDispatch();
@@ -47,7 +47,7 @@ const Login = () => {
       dispatch(addUser(res.data.data));
       return navigate("/profile");
     } catch (err) {
-      setErr("🧠 💻 Something Went Wrong  , then try again...");
+      setErr("💻 Something Went Wrong:" + err);
       console.log(err);
     }
   };
